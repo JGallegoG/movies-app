@@ -1,0 +1,161 @@
+/* Reset página */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* variables */
+:root{
+  --font-titulo: "Roboto", sans-serif;
+  --font-txt: "Lato", sans-serif;
+}
+
+/* fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;200,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+/* Estilos generales */
+body {
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+  
+  .title {
+    font-family: var(--font-titulo);
+    font-size: 55px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .txt{
+    font-family: var(--font-txt);
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  
+  form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+  }
+  
+  input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    font-family: var(--font-txt);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .btn {
+    font-family: var(--font-txt);
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: .4s;
+  }
+  
+  .search-btn {
+    background-color: #0056b3;
+  }
+  .search-btn:hover {
+    background-color: #006fe5;
+  }
+
+  .reset-btn{
+    background-color: #af3f3f;
+
+  }
+
+  .reset-btn:hover{
+    background-color: #f15454;
+
+  }
+  
+  .movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .movie-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 3px 6px 10px 0px rgba(0,0,0,0.75);
+    transition: .5s;
+  }
+
+  .movie-card:hover{
+    transform: scale(1.05);
+  }
+  
+  .movie-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .movie-card h2 {
+    font-family: var(--font-titulo);
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  .sutitle{
+    font-family: var(--font-txt);
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  
+  .movie-card p {
+    font-family: var(--font-txt);
+    font-size: 14px;
+    font-weight: 200;
+    margin-bottom: 5px;
+  }
+  
+  /* Estilos para móviles */
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 20px;
+    }
+  
+    input[type="text"] {
+      width: 100%;
+    }
+  
+    .btn {
+      padding: 8px 16px;
+    }
+  
+    .movie-list {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  
+    .movie-card {
+      padding: 10px;
+    }
+  
+    .movie-card h2 {
+      font-size: 16px;
+    }
+  }
+  
