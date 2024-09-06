@@ -13,6 +13,12 @@ La aplicación mostrará por busqueda encontrada:
 - **Título**: El nombre de la película.
 - **Sinopsis**: Un resumen breve de la trama.
 
+## Vita previa
+---
+
+![Vista previa app movie](/src/assets/movie-example.png)
+
+---
 
 ## Uso de la API de TMDb
 
