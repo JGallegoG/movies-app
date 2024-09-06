@@ -4,7 +4,7 @@ export const BuscadorPelis = () => {
 
   // variables url y consumo de api
   const url = "https://api.themoviedb.org/3/search/movie";
-  const API_KEY = "0710734718f117aa00e44d315c51c99c"
+  const API_KEY = "Introduce tu API-KEY"
   //estado de búsqueda y movies
   const [inputSearch, setInputSearch] = useState("");
   const [movies, setMovies] = useState([]);
